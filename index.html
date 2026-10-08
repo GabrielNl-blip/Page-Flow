@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solicite páginas de vendas, sites institucionais e banners promocionais com atendimento direto pelo WhatsApp.">
+    <meta name="theme-color" content="#eef4ff">
+    <title>Solicite seu Serviço</title>
+    <link rel="icon" type="image/png" href="page-flow-logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="container topbar">
+        <div class="brand">
+            <span class="brand-mark"><img class="brand-logo" src="page-flow-logo.png" alt=""></span>
+            <span class="brand-name">Page <span>Flow</span></span>
+        </div>
+        <a class="top-link" href="#formulario">Solicitar projeto</a>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div>
+                <h1>Quer um banner para o seu negócio ou um site que converta mais clientes?</h1>
+                <p>
+                    Soluções personalizadas em desenvolvimento web, landing pages e materiais visuais para
+                    impulsionar sua marca e transformar visitas em oportunidades de negócio.
+                </p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#servicos">Ver serviços</a>
+                    <a class="button secondary" href="#formulario">Solicitar orçamento</a>
+                </div>
+            </div>
+
+            <aside class="hero-card" aria-label="Vantagens dos serviços">
+                <h2>Porque escolher o nosso trabalho?</h2>
+                <ul class="check-list">
+                    <li>Entrega com qualidade visual</li>
+                    <li>Layout pensado para conversão</li>
+                    <li>Atendimento rápido por WhatsApp</li>
+                    <li>Projetos sob medida</li>
+                    <li>Você estará por dentro de tudo sobre o seu projeto</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section id="servicos">
+            <div class="section-head">
+                <h2>Serviços</h2>
+                <p>Criação e otimização digital para seu negócio.</p>
+            </div>
+            <div id="services-list" class="services-grid" aria-live="polite"></div>
+        </section>
+
+        <section id="formulario">
+            <div class="form-layout">
+                <div class="form-card">
+                    <h3>Solicitar atendimento</h3>
+                    <form id="service-form">
+                        <div class="form-grid">
+                            <div class="field">
+                                <label for="name">Nome</label>
+                                <input id="name" name="name" type="text" placeholder="Seu nome" autocomplete="name" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="phone">Telefone</label>
+                                <input id="phone" name="phone" type="tel" placeholder="(11) 99999-9999" autocomplete="tel" inputmode="tel" required>
+                            </div>
+
+                            <div class="field full">
+                                <label for="service">Tipo de serviço</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Selecione um serviço</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="date">Prazo desejado (opcional)</label>
+                                <input id="date" name="date" type="date">
+                            </div>
+
+                            <div class="field full">
+                                <label for="details">Detalhes do projeto</label>
+                                <textarea id="details" name="details" placeholder="Descreva o tipo de site, banner ou funcionalidade que você precisa..."></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Solicitar via WhatsApp</button>
+                    </form>
+                </div>
+
+                <aside class="info-panel">
+                    <h3>Como funciona</h3>
+                    <p>
+                        Você preenche os dados do projeto e envia a ideia para nós. Em seguida, a solicitação chega
+                        diretamente no WhatsApp para ser analisada e respondida com orçamento e próximos passos.
+                    </p>
+                    <ul class="mini-list">
+                        <li>Escolha o tipo de serviço</li>
+                        <li>Conte sua necessidade</li>
+                        <li>Receba proposta rápida</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
